@@ -1,7 +1,9 @@
-function inchToFeet(inch) {
-    totalFeet = inch * 0.083;
-    return totalFeet;
+function inchToFeet(inches) {
+    let feet = inches / 12;
+    return feet;
 }
 
-let inchResult = inchToFeet(10);
+let inchResult = inchToFeet(144);
 console.log(inchResult);
+
+console.log(inchToFeet(132));
