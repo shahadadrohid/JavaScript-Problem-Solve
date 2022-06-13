@@ -50,6 +50,16 @@ console.log(result);
 // console.log(squarNum);]
 
 
+// Object Define 
+
+const pizza = {
+    toppings: ['cheese', 'sauce', 'pepperoni'],
+    crust: 'deep dish',
+    serves: 2
+}
+console.log(pizza.toppings[2]);
+
+
 // Module 20 Practice Challange
 
 // Leap Year Cheak
@@ -91,3 +101,23 @@ function hourToMin(hours) {
 
 let totalMin = hourToMin(5);
 console.log(totalMin);
+
+// Module 21 Practice Problem Solve 
+
+// Find the smallest number in an Array
+
+var numbers = [10, 12, 15, 8, 18, 22, 16, 24, 7, 17, 2];
+
+function getSmallestNumber(numbers) {
+    var smallest = numbers[0];
+    for (var i = 0; i < numbers.length; i++) {
+        var element = numbers[i];
+        if (element < smallest) {
+            smallest = element;
+        }
+    }
+    return smallest;
+}
+let getResult = getSmallestNumber(numbers);
+console.log(getResult);
+
