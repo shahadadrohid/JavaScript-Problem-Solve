@@ -162,26 +162,9 @@ function getAvarage(numbers) {
 var totalAvarage = getAvarage(numbers)
 console.log(totalAvarage);
 
+// Find the Second largest number from an array 
 
-
-const array = [32, 523, 5632, 920, 6000];
-
-let largestNum = array[0];
-let secondLargestNum = 0;
-
-for (let i = 1; i < array.length; i++) {
-    if (array[i] > largestNum) {
-        secondLargestNum = largestNum;
-        largestNum = array[i];
-    }
-    else if (array[i] !== largestNum && array[i] > secondLargestNum) {
-        secondLargestNum = array[i];
-    }
-};
-console.log("Largest Number in the array is " + largestNum);
-console.log("Second Largest Number in the array is " + secondLargestNum);
-
-const array1 = [32, 523, 5632, 920, 225, 5632, 7000, 6000];
+const array = [32, 523, 5632, 920, 225, 5632, 7000, 6000];
 function getSecondLargestNumber(number) {
     let largestNum = number[0];
     let secondLargestNum = 0;
@@ -199,5 +182,5 @@ function getSecondLargestNumber(number) {
 
     return secondLargestNum;
 }
-var result = getSecondLargestNumber(array1);
+var result = getSecondLargestNumber(array);
 console.log(result);
