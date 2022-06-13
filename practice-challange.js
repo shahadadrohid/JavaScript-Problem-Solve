@@ -184,3 +184,26 @@ function getSecondLargestNumber(number) {
 }
 var result = getSecondLargestNumber(array);
 console.log(result);
+
+
+
+// Module 22 Practice Problem 
+
+// Get The Prime Number 
+
+function getThePrimeNumber(number) {
+    if (number % 2 != 0 && number % 3 != 0) {
+        // console.log(number);
+        console.log(number, 'is a prime number')
+        return true;
+    }
+    else {
+        console.log(number, 'is not a prime number')
+        return false;
+    }
+}
+var result = getThePrimeNumber(29);
+console.log(result);
+var result1 = getThePrimeNumber(243);
+console.log(result1);
+
