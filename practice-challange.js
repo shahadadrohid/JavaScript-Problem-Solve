@@ -121,3 +121,83 @@ function getSmallestNumber(numbers) {
 let getResult = getSmallestNumber(numbers);
 console.log(getResult);
 
+
+// Find the smallest number
+
+var first = 20;
+var second = 35;
+var third = 50;
+
+function findSmallestNumber(firstNum, secondNum, thirdNum) {
+    if (firstNum < secondNum && firstNum < thirdNum) {
+        console.log(firstNum, 'is the smallest')
+    }
+    else if (secondNum < firstNum && secondNum < thirdNum) {
+        console.log(secondNum, 'is the smallest')
+    }
+    else {
+        console.log(thirdNum, 'is the smallest')
+    }
+}
+
+var result = findSmallestNumber(first, second, third)
+
+
+// Find Avarage number from an array 
+
+var numbers = [10, 12, 15, 8, 18, 22, 16, 24, 7, 17, 2, 40, 38, 45, 52, 58, 64, 68, 3, 1];
+
+function getAvarage(numbers) {
+    var sum = 0;
+    for (var i = 0; i < numbers.length; i++) {
+        const element = numbers[i];
+        sum = sum + element;
+        // console.log(sum);
+    }
+    avarage = sum / numbers.length;
+    // console.log(avarage);
+    return avarage;
+}
+
+var totalAvarage = getAvarage(numbers)
+console.log(totalAvarage);
+
+
+
+const array = [32, 523, 5632, 920, 6000];
+
+let largestNum = array[0];
+let secondLargestNum = 0;
+
+for (let i = 1; i < array.length; i++) {
+    if (array[i] > largestNum) {
+        secondLargestNum = largestNum;
+        largestNum = array[i];
+    }
+    else if (array[i] !== largestNum && array[i] > secondLargestNum) {
+        secondLargestNum = array[i];
+    }
+};
+console.log("Largest Number in the array is " + largestNum);
+console.log("Second Largest Number in the array is " + secondLargestNum);
+
+const array1 = [32, 523, 5632, 920, 225, 5632, 7000, 6000];
+function getSecondLargestNumber(number) {
+    let largestNum = number[0];
+    let secondLargestNum = 0;
+    for (var i = 1; i < number.length; i++) {
+        if (number[i] > largestNum) {
+            secondLargestNum = largestNum;
+            largestNum = number[i];
+        }
+        else if (number[i] > secondLargestNum) {
+            secondLargestNum = number[i];
+        }
+    }
+    console.log(largestNum);
+    console.log(secondLargestNum);
+
+    return secondLargestNum;
+}
+var result = getSecondLargestNumber(array1);
+console.log(result);
